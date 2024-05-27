@@ -1,5 +1,4 @@
 const path = require("path");
-const WebpackAssetsManifest = require("webpack-assets-manifest");
 
 module.exports = {
   target: "node",
@@ -11,9 +10,4 @@ module.exports = {
   optimization: {
     minimize: false,
   },
-  plugins: [
-    new WebpackAssetsManifest({
-      writeToDisk: true,
-    }),
-  ],
 };
